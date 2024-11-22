@@ -1,0 +1,83 @@
+<nav class="flex mb-4" aria-label="Breadcrumb">
+  <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
+    <li class="inline-flex items-center">
+      <a routerLink=""
+         class="inline-flex items-center text-sm font-medium text-gray-700 text-primary-900">
+        <svg class="size-6 me.2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+             fill="none" viewBox="0 0 24 24">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m4 12 8-8 8 8M6 10.5V19a1 1 0 0 0 1 1h3v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h3a1 1 0 0 0 1-1v-8.5"/>
+        </svg>
+      </a>
+    </li>
+    <li>
+      <div class="flex items-center">
+        <svg class="rtl:rotate-180 w-3 h-3 text-primary-900 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+             fill="none" viewBox="0 0 6 10">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+        </svg>
+        <a href="#"
+           class="ms-1 text-sm font-medium text-primary-900 md:ms-2">Gestión de la Salud Ocupacional</a>
+      </div>
+    </li>
+    <li aria-current="page">
+      <div class="flex items-center">
+        <svg class="rtl:rotate-180 w-3 h-3 text-primary-900 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+             fill="none" viewBox="0 0 6 10">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+        </svg>
+        <span class="ms-1 text-sm font-bold text-primary-900 md:ms-2">Agenda Atención Médico</span>
+      </div>
+    </li>
+  </ol>
+</nav>
+
+<div>
+  <h1 class="text-xl py-2 font-semibold">Agenda Atención Médico</h1>
+</div>
+<hr class="h-px mt-4 mb-2.5 bg-neutral-300 border-0">
+
+<div class="w-full p-6 bg-white border border-neutral-300 rounded-lg mb-6">
+  <h5 class="mb-2 text-lg font-medium tracking-tight text-black">Filtros</h5>
+
+  <form>
+    <div class="grid gap-8 mb-6 md:grid-cols-4">
+      <div>
+        <label for="year" class="block mb-2 text-sm font-medium text-black">Año</label>
+        <select id="year"
+                class="bg-white border border-neutral-300 text-neutral-900 text-sm rounded-lg focus:outline-none focus:ring-1 focus:ring-primary-900 focus:border-primary-900 block w-full p-2.5">
+          <option value="">Selecciona el año</option>
+        </select>
+      </div>
+      <div>
+        <label for="month" class="block mb-2 text-sm font-medium text-black">Mes</label>
+        <select id="month"
+                class="bg-white border border-neutral-300 text-neutral-900 text-sm rounded-lg focus:outline-none focus:ring-1 focus:ring-primary-900 focus:border-primary-900 block w-full p-2.5">
+          <option value="">Selecciona el mes</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="flex items-start gap-2">
+      <button type="button"
+              class="text-white bg-primary-900 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center me-2">
+        <svg class="size-5 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+          <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
+                d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/>
+        </svg>
+        Buscar
+      </button>
+
+      <button type="button"
+              class="py-2.5 px-5 me-2 mb-2 text-sm font-semibold text-primary-900 focus:outline-none bg-neutral-100 rounded-lg border border-neutral-300 hover:bg-neutral-200 focus:ring-4 focus:ring-neutral-200">
+        Limpiar
+      </button>
+    </div>
+  </form>
+
+</div>
+
+<div class="mb-4">
+  <span class="text-black font-semibold">Seleccione el médico, la fecha y la hora de atención</span>
+</div>
+
