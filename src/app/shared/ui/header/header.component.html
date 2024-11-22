@@ -1,5 +1,5 @@
 <nav
-  class="bg-white border-b border-neutral-200 px-4 py-5 fixed left-20 lg:left-72 right-0 top-0 z-50">
+  class=" max-h-20 bg-white border-b border-neutral-200 px-4 py-5 fixed left-0 md:left-20 lg:left-72 right-0 top-0 z-50">
   <div class="flex flex-wrap justify-between items-center">
     <div class="flex justify-start items-center">
       <button aria-controls="drawer-navigation"
@@ -19,40 +19,21 @@
         <span class="sr-only">Toggle sidebar</span>
       </button>
       <a href="#" class="flex items-center justify-between mr-4">
-        <span class="self-center text-xl font-semibold whitespace-nowrap">Perfil Mantenimientos</span>
+        <span class="self-center text-primary-900 text-xl font-semibold whitespace-nowrap">Perfil Mantenimientos</span>
       </a>
     </div>
-    <div class="flex items-center lg:order-2">
+    <div class="flex items-center gap-2 lg:order-2">
       <button type="button"
-              class="flex mx-3 text-sm bg-neutral-800 rounded-full md:mr-0 focus:ring-4 focus:ring-neutral-300"
-              id="user-menu-button" aria-expanded="false" data-dropdown-toggle="dropdown">
+              class="flex mx-3 text-sm border-2 border-primary-900 rounded-full md:mr-0 focus:ring-2 focus:ring-primary-600">
         <span class="sr-only">Open user menu</span>
-        <img class="w-8 h-8 rounded-full"
+        <img class="size-8 rounded-full"
              src="https://ui-avatars.com/api/?name=Alvaro+Iturrizaga"
              alt="Profile photo"/>
       </button>
-      <!-- Dropdown menu -->
-      <div
-        class="hidden z-50 my-4 w-56 text-base list-none bg-white rounded divide-y divide-neutral-100 shadow rounded-xl"
-        id="dropdown">
-        <div class="py-3 px-4">
-          <span class="block text-sm font-semibold text-neutral-900">Alvaro Iturrizaga</span>
-          <span class="block text-sm text-neutral-900 truncate">aiturrizaga&#64;vallegrande.edu.pe</span>
-        </div>
-        <ul class="py-1 text-neutral-700" aria-labelledby="dropdown">
-          <li>
-            <a href="#" class="block py-2 px-4 text-sm hover:bg-neutral-100">Mi perfil</a>
-          </li>
-          <li>
-            <a href="#" class="block py-2 px-4 text-sm hover:bg-neutral-100">Configuración</a>
-          </li>
-        </ul>
-        <ul class="py-1 text-neutral-700" aria-labelledby="dropdown">
-          <li>
-            <a href="#" class="block py-2 px-4 text-sm hover:bg-neutral-100">Cerrar sesión</a>
-          </li>
-        </ul>
-      </div>
+
+      <img class="w-auto h-10"
+           src="images/osinergmin_box.png"
+           alt="Osinergmin"/>
     </div>
   </div>
 </nav>
