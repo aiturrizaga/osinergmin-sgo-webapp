@@ -3,6 +3,24 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "@osinergmin/*": [
+        "app/*"
+      ],
+      "@osinergmin/env/*": [
+        "environments/*"
+      ],
+      "@osinergmin/shared/*": [
+        "app/shared/*"
+      ],
+      "@osinergmin/core/*": [
+        "app/core/*"
+      ],
+      "@osinergmin/layout/*": [
+        "app/layout/*"
+      ]
+    },
     "outDir": "./dist/out-tsc",
     "strict": true,
     "noImplicitOverride": true,

@@ -3,6 +3,24 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "@osinergmin/*": [
+        "app/*"
+      ],
+      "@osinergmin/env/*": [
+        "environments/*"
+      ],
+      "@osinergmin/shared/*": [
+        "app/shared/*"
+      ],
+      "@osinergmin/core/*": [
+        "app/core/*"
+      ],
+      "@osinergmin/layout/*": [
+        "app/layout/*"
+      ]
+    },
     "outDir": "./out-tsc/app",
     "types": []
   },
