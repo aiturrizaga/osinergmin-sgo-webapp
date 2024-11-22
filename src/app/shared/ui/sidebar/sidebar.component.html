@@ -8,7 +8,7 @@
     </a>
   </div>
 
-  <div class="overflow-y-auto h-full px-3 bg-primary-800 text-white">
+  <div class="overflow-y-auto flex flex-col items-center lg:items-start h-full px-3 bg-primary-800 text-white">
     <div class="text-base py-4">Menu</div>
     <ul class="space-y-2">
       <li class="w-full">
@@ -19,8 +19,8 @@
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="m4 12 8-8 8 8M6 10.5V19a1 1 0 0 0 1 1h3v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h3a1 1 0 0 0 1-1v-8.5"/>
           </svg>
-          <span class="flex-1 ml-3 text-left">Gestión de Ingreso a Agentes Supervisados</span>
-          <svg class="size-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+          <span class="block md:hidden lg:flex flex-1 ml-3 text-left">Gestión de Ingreso a Agentes Supervisados</span>
+          <svg class="block md:hidden lg:block size-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                viewBox="0 0 24 24">
             <path fill-rule="evenodd"
                   d="M18.425 10.271C19.499 8.967 18.57 7 16.88 7H7.12c-1.69 0-2.618 1.967-1.544 3.271l4.881 5.927a2 2 0 0 0 3.088 0l4.88-5.927Z"
@@ -37,18 +37,18 @@
         </ul>
       </li>
 
-      <li>
+      <li class="w-full">
         <a routerLink=""
            class="flex items-center p-2 text-sm rounded-lg hover:bg-primary-900 group">
           <svg class="size-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
             <path stroke="currentColor" stroke-width="2"
                   d="M7 17v1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3Zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
           </svg>
-          <span class="ml-3">Gestión ERP</span>
+          <span class="block md:hidden lg:block ml-3">Gestión ERP</span>
         </a>
       </li>
 
-      <li>
+      <li class="w-full">
         <a routerLink=""
            class="flex items-center p-2 text-sm rounded-lg hover:bg-primary-900 group">
           <svg class="size-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
@@ -57,26 +57,26 @@
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
           </svg>
-          <span class="ml-3">Gestión de la Matriz IPERC</span>
+          <span class="block md:hidden lg:block ml-3">Gestión de la Matriz IPERC</span>
         </a>
       </li>
 
       <li class="w-full">
         <button type="button" aria-controls="dropdown-pages"
-                class="flex items-center p-2 text-sm rounded-lg group hover:bg-primary-900">
+                class="flex items-center p-2 text-sm rounded-lg hover:bg-primary-900 group">
           <svg class="size-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="M18 9V4a1 1 0 0 0-1-1H8.914a1 1 0 0 0-.707.293L4.293 7.207A1 1 0 0 0 4 7.914V20a1 1 0 0 0 1 1h4M9 3v4a1 1 0 0 1-1 1H4m11 6v4m-2-2h4m3 0a5 5 0 1 1-10 0 5 5 0 0 1 10 0Z"/>
           </svg>
-          <span class="flex-1 ml-3 text-left">Gestión de Ingreso a Agentes Supervisados</span>
-          <svg class="size-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+          <span class="block md:hidden lg:flex flex-1 ml-3 text-left">Gestión de Ingreso a Agentes Supervisados</span>
+          <svg class="block md:hidden lg:block size-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                viewBox="0 0 24 24">
             <path fill-rule="evenodd"
                   d="M5.575 13.729C4.501 15.033 5.43 17 7.12 17h9.762c1.69 0 2.618-1.967 1.544-3.271l-4.881-5.927a2 2 0 0 0-3.088 0l-4.88 5.927Z"
                   clip-rule="evenodd"/>
           </svg>
         </button>
-        <ul class="py-2 space-y-2">
+        <ul class="block md:hidden lg:block py-2 space-y-2">
           <li>
             <a routerLink=""
                class="flex items-center p-2 pl-11 w-full text-sm rounded-lg group hover:bg-primary-900">
